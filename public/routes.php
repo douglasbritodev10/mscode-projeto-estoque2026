@@ -6,8 +6,8 @@ use App\Controller\Error\NotFoundController;
 use App\Controller\Home\HomeController;
 use App\Controller\Login\loginController;
 use App\Controller\Categoria\CategoriaController;
-use App\Controller\NovaCategoria\NovaCategoriaController;
-use App\Controller\CadastrarCategoria\CadastrarCategoriaController;
+use App\Controller\Categoria\NovaCategoriaController;
+use App\Controller\Categoria\CadastrarCategoriaController;
 use App\Controller\Produto\ProdutoController;
 
 $router = [

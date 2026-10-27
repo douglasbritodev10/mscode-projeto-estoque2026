@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller\CadastrarCategoria;
+namespace App\Controller\Categoria;
 
 use App\Controller\AbstractController;
 use App\Model\Categoria\CategoriaModel;
@@ -22,7 +22,7 @@ class CadastrarCategoriaController extends AbstractController
                 throw new \Exception('Informe o nome da categoria.');
             }
             $this->model->cadastrar($requestData['nome']);
-            $this->redirect('/categoria.php');
+            $this->redirect('/categoria');
 
         } catch (\Exception $e) {
             $this->redirectToError($e->getMessage());
