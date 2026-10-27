@@ -9,10 +9,10 @@ class Query
     public function __construct()
     {
         $database = new Database(
-            host: '127.0.0.1',
-            database: 'mscode_estoque2025',
-            username: 'root',
-            password: 'root',
+            host: 'localhost',
+            database: 'mscodeestoque',
+            username: 'DOUGLAS',
+            password: '1234',
             port: 3306,
         );
 

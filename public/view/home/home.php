@@ -7,7 +7,7 @@
   <title>MS Code - Projeto Estoque 2025</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="/css/styles.css" rel="stylesheet">
 </head>
@@ -40,8 +40,8 @@
                 Produtos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/produtos.html">Estoque</a></li>
-                <li><a class="dropdown-item" href="categorias.html">Categorias</a></li>
+                <li><a class="dropdown-item" href="/produto">Produtos</a></li>
+                <li><a class="dropdown-item" href="/categoria">Categorias</a></li>
               </ul>
             </li>
             <li class="nav-item"><a href="#" class="btn btn-outline-danger m-0 ms-4" aria-current="page">Sair</a></li>
@@ -49,35 +49,8 @@
         </header>
       </div>
     </div>
-
     <div class="container py-5">
-      <div class="mb-4 d-flex flex-row justify-content-between">
-        <h1>Categorias</h1>
-        <div>
-          <a href="nova_categoria.html" class="btn btn-primary"><i class="bi bi-plus"></i>Nova categoria</a>
-        </div>
-      </div>
-
-      <table class="table table-striped table-hover">
-        <thead>
-          <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Nome</th>
-            <th scope="col-1 text-align-right">Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Informática</td>
-            <td class="col-1 text-align-right">
-              <button class="btn btn-secondary btn-sm" title="Editar"><i class="bi bi-pencil"></i></button>
-              <button class="btn btn-danger btn-sm" title="Excluir"><i class="bi bi-trash"></i></button>
-            </td>
-          </tr>
-        </tbody>
-
-      </table>
+      <!-- Conteúdo da página aqui -->
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
