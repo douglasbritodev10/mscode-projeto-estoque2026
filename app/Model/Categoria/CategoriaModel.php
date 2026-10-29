@@ -25,8 +25,7 @@ class CategoriaModel
             throw new \Exception("Erro ao cadastrar categoria. $nome");
         }
     }
-    
-
+  
     public function buscarCategorias(): array
     {
         $resultado = $this->query->select('categoria');

@@ -10,6 +10,7 @@ use App\Controller\Categoria\NovaCategoriaController;
 use App\Controller\Categoria\CadastrarCategoriaController;
 use App\Controller\Produto\ProdutoController;
 
+
 $router = [
     'routes' => [
         '/' => AppController::class,
@@ -19,6 +20,7 @@ $router = [
         '/home' => HomeController::class,
         '/nova_categoria' => NovaCategoriaController::class,
         '/cadastrar_categoria' => CadastrarCategoriaController::class,
+        
 
 
 
