@@ -13,6 +13,18 @@ class ProdutoModel
         $this->query = new Query();
     }
 
+    public function buscarCategorias(): array
+    {
+        $categorias = $this->query->select('categorias', ['id', 'nome']);
+        return $categorias;
+    }
+
+    public function salvar(array $dados): void
+    {
+        $this->cadastrar($dados['nome'], (float)$dados['valor'], (int)$dados['categoriaId']);
+    }
+
+
     public function cadastrar(string $nome, float $preco, int $categoriaId): void
     {
         $dados = [

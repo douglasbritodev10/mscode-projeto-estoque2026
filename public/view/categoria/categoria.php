@@ -33,13 +33,18 @@
           </tr>
         </thead>
         <tbody>
-          <?php foreach ($data['categorias'] as $categoria) { ?>
+          <?php $categorias = $data['categorias'] ?? []; ?>
+          <?php foreach ($categorias as $categoria) { ?>
           <tr>
             <th scope="row"><?php echo $categoria['id']; ?></th>
             <td><?php echo $categoria['nome']; ?></td>
             <td class="col-1 text-align-right">
-              <button class="btn btn-secondary btn-sm" title="Editar"><i class="bi bi-pencil"></i></button>
-              <button class="btn btn-danger btn-sm" title="Excluir"><i class="bi bi-trash"></i></button>
+
+              <a href="/editar_categoria?id=<?php echo $categoria['id']; ?>" class="btn btn-secondary btn-sm" title="Editar"><i class="bi bi-pencil"></i></a>
+              <form action="/excluir_categoria" method="POST" style="display: inline;">
+                <input type="hidden" name="id" value="<?php echo $categoria['id']; ?>">
+                <button class="btn btn-danger btn-sm" title="Excluir"><i class="bi bi-trash"></i></button>
+              </form>
             </td>
           </tr>
           <?php } ?>

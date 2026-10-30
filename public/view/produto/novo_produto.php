@@ -22,7 +22,7 @@
       </div>
 
       <div class="w-50 mt-2">
-        <form>
+        <form action="salvar_novo_produto" method="POST">
           <div class="mb-3">
             <label for="nome" class="form-label">Nome:</label>
             <input type="text" class="form-control" id="nome" name="nome">
